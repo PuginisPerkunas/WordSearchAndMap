@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primaryLightColor"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tollbar_custom"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primaryColor"
+        android:padding="@dimen/tollbar_custom_padding">
+
+        <LinearLayout
+            android:background="@drawable/shape"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv"
+                android:paddingLeft="@dimen/actv_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="1"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:hint="@string/actv_hint"
+                android:textColor="@android:color/black"
+                android:inputType="text"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <Button
+                android:id="@+id/search_btn"
+                android:paddingRight="@dimen/search_btn_padding"
+                android:layout_width="@dimen/search_btn_width"
+                android:layout_height="@dimen/search_btn_height"
+                android:background="@drawable/sharp_search_black_36"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/linear_height"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/bt_more"
+                android:layout_width="@dimen/bt_more_width"
+                android:layout_margin="@dimen/bt_more_margin"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sharp_more_vert_white_48"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/tollbar_custom"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/map_box_ll"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

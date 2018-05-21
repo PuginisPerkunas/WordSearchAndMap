@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Word Search And Map</string>
+
+    <string name="GOOGLE_MAPS_API_KEY">AIzaSyBxu7BCHyiu7lLHF3soIE_0v2sVnshg3l0</string>
+    <string name="API_KEY">X7MmtDfDWEmshGrZETAwmSjpf2qBp1q3O3fjsnIMIe4Hr6pUpy</string>
+    <string name="API_LINK">https://wordsapiv1.p.mashape.com/words/</string>
+
+    <string name="PARAM_DEFINITION">definitions</string>
+    <string name="PARAM_EXAMPLES">examples</string>
+
+    <string name="KEY_DEFINITION">DefinitionExample</string>
+    <string name="KEY_EXAMPLES">Examples</string>
+    <string name="KEY_HISTORY">History</string>
+    <string name="KEY_SP">PREFERENCES</string>
+
+    <string name="date_format">MM-dd HH:mm</string>
+
+    <string name="loading_txt">Loading. Please wait…</string>
+    <string name="wrong_txt">Something went wrong…</string>
+    <string name="try_again_txt">Try Again</string>
+    <string name="part_of_speech_empty">noun</string>
+    <string name="nothing_txt">Nothing here…</string>
+    <string name="empty_text">…----…</string>
+    <string name="choose_txt">"You choose:"</string>
+
+    <string name="action_main">Default Marker</string>
+    <string name="action_custom">Custom Marker</string>
+
+    <string name="definitions_tv_txt">Definitions</string>
+    <string name="examples_tv_txt">Examples</string>
+
+    <string name="actv_hint">Type word here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="blank_fragment_start_text">Type Word and Find It</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

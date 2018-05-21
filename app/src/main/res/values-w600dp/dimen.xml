@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- fragment_main Items Dimens -->
+    <dimen name="word_tv_text_size">32sp</dimen>
+    <dimen name="partOfSpeechMain_tv_text_size">24sp</dimen>
+    <dimen name="sp_16_original">26sp</dimen>
+
+    <dimen name="margin_5_original_dp">15dp</dimen>
+    <dimen name="margin_10_original_dp">20dp</dimen>
+
+    <!-- activity_main Items Dimens -->
+    <dimen name="actv_padding">15dp</dimen>
+    <dimen name="tollbar_custom_padding">15dp</dimen>
+    <dimen name="search_btn_padding">15dp</dimen>
+    <dimen name="search_btn_width">85dp</dimen>
+    <dimen name="search_btn_height">46dp</dimen>
+    <dimen name="bt_more_width">40dp</dimen>
+    <dimen name="bt_more_margin">0dp</dimen>
+    <dimen name="linear_height">35dp</dimen>
+
+    <dimen name="start_text_size">42sp</dimen>
+
+</resources>
